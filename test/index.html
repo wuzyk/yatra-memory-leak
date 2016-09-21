@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Yatra memory leak issue App</title>
+</head>
+
+<body>
+  <script src="../node_modules/basisjs/src/basis.js" basis-config="devpanel: false"></script>
+  <script>
+    if (this.top === this)
+      location.href = '../node_modules/yatra/reporter.html?page=../../test/index.html';
+
+    function loadTests(loadTestsToReporter){
+      loadTestsToReporter(basis.require('./index.js'));
+    }
+  </script>
+</body>
+
+</html>

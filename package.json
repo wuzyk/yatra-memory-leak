@@ -1,0 +1,17 @@
+{
+  "name": "yatra-memory-leak",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "author": "",
+  "devDependencies": {
+    "basisjs": "^1.9.2",
+    "karma": "^1.3.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-yatra": "^1.0.0",
+    "yatra": "^1.2.3"
+  },
+  "scripts": {
+    "test": "node node_modules/karma/bin/karma start karma.conf.js"
+  }
+}
